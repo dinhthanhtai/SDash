@@ -1,11 +1,9 @@
 import Image from "next/image";
-import { useState } from "react";
-import WalletDetail from "./WalletDetail";
 
 function WalletTotal () {
 
     return (
-        <div className="flex gap-4 mt-1 ">
+        <div className="flex gap-4 mt-1">
 
             <div className=" flex justify-center bg-blue-400 rounded-full w-12 h-12 ">
                 <Image className="mt-1 w-9 h-9" src="/images/wallet-icon.png" width={28} height={16} alt="wallet icon"/>

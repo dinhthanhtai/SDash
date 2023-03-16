@@ -1,11 +1,18 @@
 import AssetDetail from "./AssetDetail";
 
-function WalletDetail() {
+function WalletDetail(props) {
 
     const rowWidth = "w-56"
+
+    const coinList = [
+        {coinImage: '/images/bnb.png', assetName: 'BNB', balance: 2.231, price: 234.213,  holding: 587.036 },
+        {coinImage: '/images/matic.png', assetName: 'MATIC', balance: 2.231, price: 234.213,  holding: 587.036 },
+        {coinImage: '/images/solana.png', assetName: 'SOL', balance: 2.231, price: 234.213,  holding: 587.036 }
+    ]
+      
     return (
-            <table className="table-auto bg-blue-500 p-6 bg-opacity-30">
-                <thead className="h-24">
+            <table className="table-auto text-white border-collapse">
+                <thead className="">
                     <tr>
                     <th className={rowWidth}>Asset</th>
                     <th className={rowWidth}></th>
@@ -15,9 +22,10 @@ function WalletDetail() {
                     </tr>
                 </thead>
                 <tbody>
-                    <AssetDetail/>
-                    <AssetDetail/>
-                    <AssetDetail/>
+                    {coinList.map( coinInfo => {
+                       return <AssetDetail coinList={coinInfo}/>
+                    })
+                    }
                 </tbody>
             </table>
     )
