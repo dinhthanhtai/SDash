@@ -7,7 +7,7 @@ function WalletDetail(props) {
     const coinList = [
         {coinImage: '/images/bnb.png', assetName: 'BNB', balance: 2.231, price: 234.213,  holding: 587.036 },
         {coinImage: '/images/matic.png', assetName: 'MATIC', balance: 2.231, price: 234.213,  holding: 587.036 },
-        {coinImage: '/images/solana.png', assetName: 'SOL', balance: 2.231, price: 234.213,  holding: 587.036 }
+        {coinImage: '/images/solana.png', assetName: 'SOL', balance: 2.231, price: 234.213,  holding: 587.036 } 
     ]
       
     return (
